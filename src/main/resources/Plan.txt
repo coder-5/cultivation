@@ -9,15 +9,18 @@ Minor Stages: 4 per Major Rank (Early, Middle, Late, Peak)
 Substages: 10 per Minor Stage (G0, G1, G2, G3, G4, G5, G6, G7, G8, G9)
 Total Steps: 240 Substages to Immortality
 
-2. TALENT SYSTEM (Scale 0-21)
+2. TALENT SYSTEM (Scale: 0 to 21)
 --------------------------------------------------------------------------------
-Formula: neededEXPToReachNextSubStage
--> (1 + currentSubStageIndex) * (22 - talent)
+Talent (T) is randomly generated at launch and determines the character's
+potential ceiling and cultivation efficiency.
 
-Formula: CultivationGainSpeed (Per Tick)
--> Random.nextFloat(0, (neededEXPToReachNextSubStage / (22 - talent)))
+FORMULA: EXP Requirement
+- neededEXPToReachNextSubStage = (1 + currentSubStageIndex) * (22 - talent)
 
-Talent Ceiling Table:
+FORMULA: Cultivation Speed
+- gainPerTick = Random.nextFloat(0, (neededEXPToReachNextSubStage / (22 - talent)))
+
+TALENT CEILING MAPPING:
 | Talent | Maximum Attainable Rank           |
 |--------|-----------------------------------|
 | 0      | Mortal                            |
