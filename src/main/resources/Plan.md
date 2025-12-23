@@ -9,42 +9,29 @@ The game is a Cultivation (Xianxia) RPG focused on progression through specific 
   * **10 Substages:** Each Minor Stage contains ten substages (G0, G1, G2, G3, G4, G5, G6, G7, G8, G9).
 * **Ascension:** To advance from G9 of one Minor Stage to G0 of the next, the player must pass a Heavenly Tribulation.
 
-2. TALENT SYSTEM (Scale: 0 to 21)
---------------------------------------------------------------------------------
-Talent (T) is randomly generated at launch and determines the character's
-potential ceiling and cultivation efficiency.
+## 2. TALENT SYSTEM (SPIRIT ROOT)
+A character's **Talent Score (T)** is randomly generated at launch (0 to 21) and determines both their potential ceiling and cultivation efficiency.
 
-FORMULA: EXP Requirement
-- neededEXPToReachNextSubStage = (1 + currentSubStageIndex) * (22 - talent)
+### 2.1 Talent Ceiling Mapping
+The Talent Score dictates the maximum rank a character can naturally achieve:
 
-FORMULA: Cultivation Speed
-- gainPerTick = Random.nextFloat(0, (neededEXPToReachNextSubStage / (22 - talent)))
+| Talent Score | Maximum Attainable Rank         | Talent Score | Maximum Attainable Rank     |
+|:-------------|:--------------------------------|:-------------|:----------------------------|
+| **0**        | Mortal                          | **11**       | Core Formation Late         |
+| **1**        | Qi Gathering Early              | **12**       | Core Formation Peak         |
+| **2**        | Qi Gathering Middle             | **13**       | Nascent Soul Early          |
+| **3**        | Qi Gathering Late               | **14**       | Nascent Soul Middle         |
+| **4**        | Qi Gathering Peak               | **15**       | Nascent Soul Late           |
+| **5**        | Foundation Establishment Early  | **16**       | Nascent Soul Peak           |
+| **6**        | Foundation Establishment Middle | **17**       | Deity Transformation Early  |
+| **7**        | Foundation Establishment Late   | **18**       | Deity Transformation Middle |
+| **8**        | Foundation Establishment Peak   | **19**       | Deity Transformation Late   |
+| **9**        | Core Formation Early            | **20**       | Deity Transformation Peak   |
+| **10**       | Core Formation Middle           | **21**       | **Immortality**             |
 
-TALENT CEILING MAPPING:
-| Talent | Maximum Attainable Rank           |
-|--------|-----------------------------------|
-| 0      | Mortal                            |
-| 1      | Qi Gathering Early                |
-| 2      | Qi Gathering Middle               |
-| 3      | Qi Gathering Late                 |
-| 4      | Qi Gathering Peak                 |
-| 5      | Foundation Establishment Early    |
-| 6      | Foundation Establishment Middle   |
-| 7      | Foundation Establishment Late     |
-| 8      | Foundation Establishment Peak     |
-| 9      | Core Formation Early              |
-| 10     | Core Formation Middle             |
-| 11     | Core Formation Late               |
-| 12     | Core Formation Peak               |
-| 13     | Nascent Soul Early                |
-| 14     | Nascent Soul Middle               |
-| 15     | Nascent Soul Late                 |
-| 16     | Nascent Soul Peak                 |
-| 17     | Deity Transformation Early        |
-| 18     | Deity Transformation Middle       |
-| 19     | Deity Transformation Late         |
-| 20     | Deity Transformation Peak         |
-| 21     | Immortality                       |
+### 2.2 Growth Formulas (The Heavens Math)
+* **EXP Requirement:** `neededEXP = (1 + currentSubStageIndex) * (22 - Talent)`.
+* **Cultivation Speed:** `gainPerTick = Random.nextFloat(0, (neededEXP / (22 - Talent)))`.
 
 3. THE SECT SYSTEM (Optional)
 --------------------------------------------------------------------------------
