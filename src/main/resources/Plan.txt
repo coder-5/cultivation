@@ -1,0 +1,21 @@
+WHAT IS IT: It is a Cultivation game.
+
+INTRO: It will start by explaining what cultivation is and how it works.
+
+RANKS: Each rank will be split into 4 minor stages, which will be each split into 10 substages.
+The ranks are the following: Qi Gathering, Qi Refining (Optional, but gives a Stronger foundation),
+Foundation Establishment, Core Formation, Nascent Soul,
+Soul Nurturing (Optional, but it gives a Stronger foundation and boosts success rates, along with weakening tribulation),
+ and Deity Transformation
+
+each major rank is split into early, middle, late, and peak stages.
+
+each minor rank is split into the substages G0, G1, G2, G3, G4, G5, G6, G7, G8, G9.
+
+COMBAT: Players may battle to increase their combat rank, which follows similar principles to cultivation ranks,
+but has 10 major stages and the same number of minors and substages.
+
+The major Stages are: Martial Disciple, Martial Master, Martial Grandmaster, Martial Lord, Martial King,
+Martial Emperor, Martial Sovereign, Martial Spirit, Martial Ancestor, and Martial Saint.
+
+Each major stage has four substages: lesser, normal, greater, peak.
