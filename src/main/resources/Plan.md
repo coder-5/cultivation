@@ -1,15 +1,13 @@
 # GAME DESIGN DOCUMENT: CULTIVATION SYSTEM MASTER REFERENCE
 
+## 1. CORE GAMEPLAY STRUCTURE
+The game is a Cultivation (Xianxia) RPG focused on progression through specific ranks and stages.
 
-1. CORE GAMEPLAY STRUCTURE
---------------------------------------------------------------------------------
-Game Genre: Cultivation (Xianxia) / RPG
-Progression Units:
-- 6 Major Ranks: From Qi Gathering to Immortality.
-- 4 Minor Stages: Each Major Rank is split into Early, Middle, Late, and Peak.
-- 10 Substages: Each Minor Stage is split into G0, G1, G2, G3, G4, G5, G6, G7, G8, G9.
-- Ascension: To move from G9 to the next Minor Stage G0, a player must pass a
-  Heavenly Tribulation.
+* **Hierarchy Levels:**
+  * **6 Major Ranks:** Spanning from Qi Gathering to Immortality.
+  * **4 Minor Stages:** Each Major Rank is split into Early, Middle, Late, and Peak.
+  * **10 Substages:** Each Minor Stage contains ten substages (G0, G1, G2, G3, G4, G5, G6, G7, G8, G9).
+* **Ascension:** To advance from G9 of one Minor Stage to G0 of the next, the player must pass a Heavenly Tribulation.
 
 2. TALENT SYSTEM (Scale: 0 to 21)
 --------------------------------------------------------------------------------
