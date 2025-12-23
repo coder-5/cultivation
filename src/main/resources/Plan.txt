@@ -98,6 +98,9 @@ STAGES:
 7. Martial Sovereign  8. Martial Spirit      9. Martial Ancestor
 10. Martial Saint
 
+It is independent of the cultivation rank and while exp needed to rank up formula is (1 + currentSubStageIndex) * 5
+the exp gained formula is (opponentCombatSubstance / YourCombatSubstage)
+
 5. ABOLISHMENT & REBIRTH MECHANIC
 --------------------------------------------------------------------------------
 When a player reaches the "Wall" (G9 of their Talent Ceiling rank):
