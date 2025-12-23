@@ -4,8 +4,10 @@ graph TD
 
     Intro --> Roll["Screen 2: Spirit Root Awakening<br/>'The Ancient Testing Stone reads your destiny.'<br/>*System generates random Talent Score T (0-21)*"]
 
+    Roll --> Briefing["Screen 3: Potential Briefing<br/>'Your potential is revealed.'<br/>Explain Rank ceiling and growth speed."]
+
 %% 2. TALENT CEILING LOGIC (0-21)
-    Roll --> TLogic{Talent Score T}
+    Briefing --> TLogic{Talent Score T}
 
     TLogic -- 0 --> TR0["Talent: 0 | Max: Mortal"]
     TLogic -- 1 --> TR1["Talent: 1 | Max: Qi Gathering Early"]
