@@ -1,13 +1,16 @@
 ================================================================================
-CULTIVATION GAME: MASTER LOGIC REFERENCE
+GAME DESIGN DOCUMENT: CULTIVATION SYSTEM MASTER REFERENCE
 ================================================================================
 
-1. CORE STRUCTURE
+1. CORE GAMEPLAY STRUCTURE
 --------------------------------------------------------------------------------
-Major Ranks: 6 (Qi Gathering -> Immortality)
-Minor Stages: 4 per Major Rank (Early, Middle, Late, Peak)
-Substages: 10 per Minor Stage (G0, G1, G2, G3, G4, G5, G6, G7, G8, G9)
-Total Steps: 240 Substages to Immortality
+Game Genre: Cultivation (Xianxia) / RPG
+Progression Units:
+- 6 Major Ranks: From Qi Gathering to Immortality.
+- 4 Minor Stages: Each Major Rank is split into Early, Middle, Late, and Peak.
+- 10 Substages: Each Minor Stage is split into G0, G1, G2, G3, G4, G5, G6, G7, G8, G9.
+- Ascension: To move from G9 to the next Minor Stage G0, a player must pass a
+  Heavenly Tribulation.
 
 2. TALENT SYSTEM (Scale: 0 to 21)
 --------------------------------------------------------------------------------
