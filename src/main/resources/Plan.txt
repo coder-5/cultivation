@@ -87,27 +87,15 @@ FULL SECT RANK & DISCOUNT TABLE (BASED ON ACTUAL RANK):
 | Deity Transformation Peak       | Grand Elder                   | 20%      |
 | Immortality                     | Ancestor                      | 21%      |
 
-4. ABOLISHMENT & REBIRTH (The Talent Loop)
+4. COMBAT RANK SYSTEM
 --------------------------------------------------------------------------------
-Trigger: When current rank == Talent Ceiling (at G9).
-Effect: Abolishing cultivation base.
-- Current Cultivation Rank resets to Mortal (G0).
-- Talent Score increases by +1 permanently.
-- Combat Rank is preserved (does not reset).
-- Player re-rolls for Sect Skip based on new higher Talent.
+Combat Rank is separate from Cultivation. 10 Major Stages, each with 4 sub-
+stages (Lesser, Normal, Greater, Peak).
 
-5. COMBAT RANK SYSTEM (10 Stages)
---------------------------------------------------------------------------------
-Each stage has 4 substages: Lesser, Normal, Greater, Peak.
-1.  Martial Disciple
-2.  Martial Master
-3.  Martial Grandmaster
-4.  Martial Lord
-5.  Martial King
-6.  Martial Emperor
-7.  Martial Sovereign
-8.  Martial Spirit
-9.  Martial Ancestor
+STAGES:
+1. Martial Disciple   2. Martial Master      3. Martial Grandmaster
+4. Martial Lord       5. Martial King        6. Martial Emperor
+7. Martial Sovereign  8. Martial Spirit      9. Martial Ancestor
 10. Martial Saint
 
 5. ABOLISHMENT & REBIRTH MECHANIC
