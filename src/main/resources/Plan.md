@@ -92,10 +92,8 @@ Players reaching their Talent Ceiling (G9 of their maximum rank) can choose to "
   3.  **Combat Status:** Combat Rank is either preserved or reset to its state prior to cultivation.
   4.  **Sect Status:** Players can re-evaluate their Sect Rank based on their new higher Talent.
 
-6. INTRO SEQUENCE
---------------------------------------------------------------------------------
-1. Explain Cultivation world and mechanics.
-2. Roll Talent Score (0-21).
-3. Display Talent Score and explain specific meaning (Ceiling and Potential).
-4. Present an option to join a Sect.
-================================================================================
+## 6. INTRO SEQUENCE
+1.  **Lore Presentation:** Introduction to the world and Spirit Root mechanics.
+2.  **Talent Awakening:** Random roll of Talent Score (0–21).
+3.  **Potential Briefing:** Explanation of the character's Rank ceiling and growth speed.
+4.  **Path Choice:** Presentation of the option to join a Sect or remain Rogue.
