@@ -98,6 +98,8 @@ graph TD
     end
 
     subgraph "Combat Ranks (Lesser, Normal, Greater, Peak)"
+        direction TB
+        CLogic["COMBAT MATH:<br/>neededEXP = (1 + currentSubStage) * 5<br/>gain = (opponentPower / yourPower)"]
         C1["1. Martial Disciple"]
         C2["2. Martial Master"]
         C3["3. Martial Grandmaster"]
