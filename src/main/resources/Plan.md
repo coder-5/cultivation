@@ -93,8 +93,8 @@ Combat Rank is independent of Cultivation Rank.
     9. Martial Ancestor
     10. Martial Saint
 * **Progression Formula:**
-    * **EXP Needed:** `(1 + currentSubStageIndex) * 5`.
-    * **EXP Gained:** `(opponentCombatSubstance / YourCombatSubstage)`.
+    * **EXP Needed:** `(1 + currentCombatSubStageIndex) * 5 + (1 + currentCombatMinorStageIndex) * 10 + (1 + currenCombattMajorStageIndex) * 20`.
+    * **EXP Gained:** `(opponentCombatSubstance - YourCombatSubstage)`.
 
 ## 5. ABOLISHMENT & REBIRTH MECHANIC
 Players reaching their Talent Ceiling (G9 of their maximum rank) can choose to "Abolish Cultivation Base".
