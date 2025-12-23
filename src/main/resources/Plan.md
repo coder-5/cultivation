@@ -5,6 +5,7 @@ The game is a Cultivation (Xianxia) RPG focused on progression through specific 
 
 * **Hierarchy Levels:**
     * **6 Major Ranks:** Spanning from Qi Gathering to Immortality.
+    * **4 Minor Stages:** Each Major Rank is split into Early, Middle, Late, and Peak.
     * **10 Substages:** Each Minor Stage contains ten substages (G0, G1, G2, G3, G4, G5, G6, G7, G8, G9).
 * **Ascension:** To advance from G9 of one Minor Stage to G0 of the next, the player must pass a Heavenly Tribulation.
 
@@ -80,23 +81,33 @@ Progressing through cultivation ranks unlocks higher sect positions and discount
 Combat Rank is independent of Cultivation Rank.
 
 * **Structure:** 10 Major Stages, each with four substages (Lesser, Normal, Greater, Peak).
-* **Stages:** 1. Martial Disciple, 2. Master, 3. Grandmaster, 4. Lord, 5. King, 6. Emperor, 7. Sovereign, 8. Spirit, 9. Ancestor, 10. Saint.
+* **Stages:**
+    1. Martial Disciple
+    2. Martial Master
+    3. Martial Grandmaster
+    4. Martial Lord
+    5. Martial King
+    6. Martial Emperor
+    7. Martial Sovereign
+    8. Martial Spirit
+    9. Martial Ancestor
+    10. Martial Saint
 * **Progression Formula:**
     * **EXP Needed:** `(1 + currentSubStageIndex) * 5`.
     * **EXP Gained:** `(opponentCombatSubstance / YourCombatSubstage)`.
 
 ## 5. ABOLISHMENT & REBIRTH MECHANIC
-Players reaching their Talent Ceiling (G9 of their maximum rank) can choose to "Abolish Cultivation Base."
+Players reaching their Talent Ceiling (G9 of their maximum rank) can choose to "Abolish Cultivation Base".
 
 * **Requirements:** Must reach the maximum rank allowed by current Talent score.
 * **Results:**
-    1.  **Talent Increase:** Talent Score (T) increases by +1.
-    2.  **Rank Reset:** Cultivation Rank resets to Mortal (G0).
-    3.  **Combat Status:** Combat Rank is either preserved or reset to its state prior to cultivation.
-    4.  **Sect Status:** Players can re-evaluate their Sect Rank based on their new higher Talent.
+    1. **Talent Increase:** Talent Score (T) increases by +1.
+    2. **Rank Reset:** Cultivation Rank resets to Mortal (G0).
+    3. **Combat Status:** Combat Rank is preserved during rebirth.
+    4. **Sect Status:** Players can re-evaluate their Sect Rank based on their new higher Talent.
 
 ## 6. INTRO SEQUENCE
-1.  **Lore Presentation:** Introduction to the world and Spirit Root mechanics.
-2.  **Talent Awakening:** Random roll of Talent Score (0–21).
-3.  **Potential Briefing:** Explanation of the character's Rank ceiling and growth speed.
-4.  **Path Choice:** Presentation of the option to join a Sect or remain Rogue.
+1. **Lore Presentation:** Introduction to the world and Spirit Root mechanics.
+2. **Talent Awakening:** Random roll of Talent Score (0–21).
+3. **Potential Briefing:** Explanation of the character's Rank ceiling and growth speed.
+4. **Path Choice:** Presentation of the option to join a Sect or remain Rogue.
