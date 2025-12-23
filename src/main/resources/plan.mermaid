@@ -1,0 +1,111 @@
+graph TD
+%% 1. START & LORE
+    Start([Launch Game]) --> Intro["Screen 1: The Lore Intro<br/>'To cultivate is to defy Heaven. Your vessel is limited by your Spirit Root.'<br/>'Structure: 6 Major Ranks, 4 Minor Stages each, 10 Substages (G0-G9) each.'<br/>'Requirement: You must pass a Heavenly Tribulation at G9 to reach G0 of the next stage.'"]
+
+    Intro --> Roll["Screen 2: Spirit Root Awakening<br/>'The Ancient Testing Stone reads your destiny.'<br/>*System generates random Talent Score T (0-21)*"]
+
+%% 2. TALENT CEILING LOGIC (0-21)
+    Roll --> TLogic{Talent Score T}
+
+    TLogic -- 0 --> TR0["Talent: 0 | Max: Mortal"]
+    TLogic -- 1 --> TR1["Talent: 1 | Max: Qi Gathering Early"]
+    TLogic -- 2 --> TR2["Talent: 2 | Max: Qi Gathering Middle"]
+    TLogic -- 3 --> TR3["Talent: 3 | Max: Qi Gathering Late"]
+    TLogic -- 4 --> TR4["Talent: 4 | Max: Qi Gathering Peak"]
+    TLogic -- 5 --> TR5["Talent: 5 | Max: Foundation Establishment Early"]
+    TLogic -- 6 --> TR6["Talent: 6 | Max: Foundation Establishment Middle"]
+    TLogic -- 7 --> TR7["Talent: 7 | Max: Foundation Establishment Late"]
+    TLogic -- 8 --> TR8["Talent: 8 | Max: Foundation Establishment Peak"]
+    TLogic -- 9 --> TR9["Talent: 9 | Max: Core Formation Early"]
+    TLogic -- 10 --> TR10["Talent: 10 | Max: Core Formation Middle"]
+    TLogic -- 11 --> TR11["Talent: 11 | Max: Core Formation Late"]
+    TLogic -- 12 --> TR12["Talent: 12 | Max: Core Formation Peak"]
+    TLogic -- 13 --> TR13["Talent: 13 | Max: Nascent Soul Early"]
+    TLogic -- 14 --> TR14["Talent: 14 | Max: Nascent Soul Middle"]
+    TLogic -- 15 --> TR15["Talent: 15 | Max: Nascent Soul Late"]
+    TLogic -- 16 --> TR16["Talent: 16 | Max: Nascent Soul Peak"]
+    TLogic -- 17 --> TR17["Talent: 17 | Max: Deity Transformation Early"]
+    TLogic -- 18 --> TR18["Talent: 18 | Max: Deity Transformation Middle"]
+    TLogic -- 19 --> TR19["Talent: 19 | Max: Deity Transformation Late"]
+    TLogic -- 20 --> TR20["Talent: 20 | Max: Deity Transformation Peak"]
+    TLogic -- 21 --> TR21["Talent: 21 | Max: Immortality"]
+
+%% 3. OPTIONAL SECT ENTRANCE
+    TR0 & TR1 & TR2 & TR3 & TR4 & TR5 & TR6 & TR7 & TR8 & TR9 & TR10 & TR11 & TR12 & TR13 & TR14 & TR15 & TR16 & TR17 & TR18 & TR19 & TR20 & TR21 --> PathChoice{Join a Sect?}
+
+    PathChoice -- No --> Rogue["Rogue Path:<br/>Discount: 0% at all times."]
+    PathChoice -- Yes --> SectSkip["Sect Potential Evaluation"]
+
+%% 4. SECT STARTING SKIP
+    SectSkip -- "Talent 21" --> StartChosen["Start as: Chosen Disciple (10% Disc.)"]
+    SectSkip -- "Talent 17-20" --> StartCore["Start as: Core Disciple (8% Disc.)"]
+    SectSkip -- "Talent 13-16" --> StartInner["Start as: Inner Disciple (6% Disc.)"]
+    SectSkip -- "Talent 9-12" --> StartOuter["Start as: Outer Disciple (4% Disc.)"]
+    SectSkip -- "Talent 1-8" --> StartServD["Start as: Servant Disciple (2% Disc.)"]
+    SectSkip -- "Talent 0" --> StartServ["Start as: Servant (0% Disc.)"]
+
+%% 5. THE FORMULA ENGINE (Core Math)
+    subgraph "The Heavens Math (Logic Engine)"
+        direction TB
+        EXP["EXP REQUIRED TO LEVEL SUBSTAGE:<br/>neededEXP = (1 + theCurrentSubStageIndex) * (22 - talent)"]
+        SPEED["CULTIVATION SPEED (Gained per tick):<br/>gain = Random.nextFloat( 0, (neededEXP / (22 - talent)) )"]
+    end
+
+%% 6. GAMEPLAY & CEILING LOOP
+    Rogue & StartServ & StartServD & StartOuter & StartInner & StartCore & StartChosen --> Gameplay["Active Cultivation:<br/>Apply EXP Formula & Speed Formula"]
+
+    Gameplay --> CeilingCheck{Is Current Rank == Max Talent Rank?}
+
+%% Path A: Ascend
+    CeilingCheck -- No --> Tribulation["Trigger: Heavenly Tribulation<br/>Ascend to Next Minor Stage G0"]
+    Tribulation --> Gameplay
+
+%% Path B: Abolish Logic
+    CeilingCheck -- Yes --> TalentWall["SCREEN: THE CEILING REACHED<br/>'You have reached your destiny's limit.'"]
+
+    TalentWall --> WallChoice{Your Choice:}
+
+    WallChoice -- "Accept Fate" --> EndGame["Stay at current rank."]
+
+    WallChoice -- "Abolish Cultivation Base" --> Rebirth["ACTION: SACRIFICE POWER<br/>1. Rank resets to Mortal (G0)<br/>2. Talent Score T increases by 1<br/>3. Combat Rank is PRESERVED"]
+
+    Rebirth --> PathChoice
+
+%% 7. FULL TABLES
+    subgraph "Sect Ranks & Discounts (Actual Rank Based)"
+        SR1["Mortal: Servant | 0%"]
+        SR2["Qi Gathering Early: Prob. Servant Disciple | 1%"]
+        SR3["Qi Gathering Middle: Servant Disciple | 2%"]
+        SR4["Qi Gathering Late: Prob. Outer Disciple | 3%"]
+        SR5["Qi Gathering Peak: Outer Disciple | 4%"]
+        SR6["Found. Estab. Early: Prob. Inner Disciple | 5%"]
+        SR7["Found. Estab. Middle: Inner Disciple | 6%"]
+        SR8["Found. Estab. Late: Prob. Core Disciple | 7%"]
+        SR9["Found. Estab. Peak: Core Disciple | 8%"]
+        SR10["Core Form. Early: Prob. Chosen Disciple | 9%"]
+        SR11["Core Form. Middle: Chosen Disciple | 10%"]
+        SR12["Core Form. Late: Prob. Enforcer | 11%"]
+        SR13["Core Form. Peak: Enforcer | 12%"]
+        SR14["Nascent Soul Early: Prob. Minor Elder | 13%"]
+        SR15["Nascent Soul Middle: Minor Elder | 14%"]
+        SR16["Nascent Soul Late: Prob. Elder | 15%"]
+        SR17["Nascent Soul Peak: Elder | 16%"]
+        SR18["Deity Trans. Early: Prob. Major Elder | 17%"]
+        SR19["Deity Trans. Middle: Major Elder | 18%"]
+        SR20["Deity Trans. Late: Prob. Grand Elder | 19%"]
+        SR21["Deity Trans. Peak: Grand Elder | 20%"]
+        SR22["Immortality: Ancestor | 21%"]
+    end
+
+    subgraph "Combat Ranks (Lesser, Normal, Greater, Peak)"
+        C1["1. Martial Disciple"]
+        C2["2. Martial Master"]
+        C3["3. Martial Grandmaster"]
+        C4["4. Martial Lord"]
+        C5["5. Martial King"]
+        C6["6. Martial Emperor"]
+        C7["7. Martial Sovereign"]
+        C8["8. Martial Spirit"]
+        C9["9. Martial Ancestor"]
+        C10["10. Martial Saint"]
+    end
