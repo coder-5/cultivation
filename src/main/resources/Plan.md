@@ -73,19 +73,17 @@ Progressing through cultivation ranks unlocks higher sect positions and discount
 | Deity Trans. Peak     | Grand Elder            |   20%    |
 | Immortality           | Ancestor               |   21%    |
 
-4. COMBAT RANK SYSTEM
---------------------------------------------------------------------------------
-Combat Rank is separate from Cultivation. 10 Major Stages, each with 4 sub-
-stages (Lesser, Normal, Greater, Peak).
+## 4. COMBAT RANK SYSTEM
+Combat Rank is independent of Cultivation Rank.
 
-STAGES:
-1. Martial Disciple   2. Martial Master      3. Martial Grandmaster
-4. Martial Lord       5. Martial King        6. Martial Emperor
-7. Martial Sovereign  8. Martial Spirit      9. Martial Ancestor
-10. Martial Saint
+* **Structure:** 10 Major Stages, each with four substages (Lesser, Normal, Greater, Peak).
+* **Stages:** 1. Martial Disciple, 2. Master, 3. Grandmaster, 4. Lord, 5. King, 6. Emperor, 7. Sovereign, 8. Spirit, 9. Ancestor, 10. Saint.
+* **Progression Formula:**
+  * **EXP Needed:** `(1 + currentSubStageIndex) * 5`.
+  * **EXP Gained:** `(opponentCombatSubstance / YourCombatSubstage)`.
 
-It is independent of the cultivation rank and while exp needed to rank up formula is (1 + currentSubStageIndex) * 5
-the exp gained formula is (opponentCombatSubstance / YourCombatSubstage)
+## 5. ABOLISHMENT & REBIRTH MECHANIC
+Players reaching their Talent Ceiling (G9 of their maximum rank) can choose to "Abolish Cultivation Base".
 
 5. ABOLISHMENT & REBIRTH MECHANIC
 --------------------------------------------------------------------------------
