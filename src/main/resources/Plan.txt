@@ -117,5 +117,5 @@ When a player reaches the "Wall" (G9 of their Talent Ceiling rank):
 1. Explain Cultivation world and mechanics.
 2. Roll Talent Score (0-21).
 3. Display Talent Score and explain specific meaning (Ceiling and Potential).
-4. Present optional choice to join a Sect.
+4. Present an option to join a Sect.
 ================================================================================
