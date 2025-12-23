@@ -106,7 +106,7 @@ When a player reaches the "Wall" (G9 of their Talent Ceiling rank):
 - Result:
   1. Talent Score (T) increases by +1.
   2. Cultivation Rank is reset to Mortal (G0).
-  3. Combat Rank is preserved (NOT reset).
+  3. Combat Rank is changed to what it was before player started cultivating.
   4. Player may re-evaluate Sect Rank (allowing for skips with higher Talent).
 
 6. INTRO SEQUENCE
