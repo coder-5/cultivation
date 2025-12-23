@@ -59,7 +59,7 @@ graph TD
     Gameplay --> CeilingCheck{Is Current Rank == Max Talent Rank?}
 
 %% Path A: Ascend
-    CeilingCheck -- No --> Tribulation["Trigger: Heavenly Tribulation<br/>Ascend to Next Minor Stage G0"]
+    CeilingCheck -- No --> Tribulation["Trigger: Heavenly Tribulation<br/>(1 bolt at Qi Gathering, +2 per Rank)<br/>Ascend to Next Minor Stage G0"]
     Tribulation --> Gameplay
 
 %% Path B: Abolish Logic
@@ -69,7 +69,7 @@ graph TD
 
     WallChoice -- "Accept Fate" --> EndGame["Stay at current rank."]
 
-    WallChoice -- "Abolish Cultivation Base" --> Rebirth["ACTION: SACRIFICE POWER<br/>1. Rank resets to Mortal (G0)<br/>2. Talent Score T increases by 1<br/>3. Combat Rank is PRESERVED"]
+    WallChoice -- "Abolish Cultivation Base" --> Rebirth["ACTION: SACRIFICE POWER<br/>1. Rank resets to Mortal (G0)<br/>2. Talent Score T increases by 1<br/>3. Combat Rank is PRESERVED<br/>4. Re-evaluate Sect Rank based on new Talent"]
 
     Rebirth --> PathChoice
 
