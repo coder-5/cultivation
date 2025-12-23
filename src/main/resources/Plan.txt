@@ -9,7 +9,7 @@ each major rank is split into early, middle, late, and peak stages.
 
 each minor rank is split into the substages G0, G1, G2, G3, G4, G5, G6, G7, G8, G9.
 
-Sonmeone must pass a heavenly tribulation to ascend a minor rank.
+Someone must pass a heavenly tribulation to ascend a minor rank.
 
 COMBAT: Players may battle to increase their combat rank, which follows similar principles to cultivation ranks,
 but has 10 major stages and the same number of minors and substages.
@@ -21,7 +21,7 @@ Each major stage has four substages: lesser, normal, greater, peak.
 
 Sect: Users may join sects to gain contribution points which they may spend for pills.
 
-Your rank deterimeies what tasks you can do and your discount on pills and other resources.
+Your rank determines what tasks you can do and your discount on pills and other resources.
 
 While your talent determines your starting rank, you must take a trial to rank up.
 
@@ -49,7 +49,7 @@ While your talent determines your starting rank, you must take a trial to rank u
       | Deity Transformation Middle     | Major Elder                   | 18%      |
       | Deity Transformation Late       | Probationary Grand Elder      | 19%      |
       | Deity Transformation Peak       | Grand Elder                   | 20%      |
-      | Immortality                     | Anscestor                     | 21%      |
+      | Immortality                     | Ancestor                      | 21%      |
       |_________________________________|_______________________________|__________|
 
        *This is talking about your actual rank, not the rank you have the potential to reach, however, you may skip up to chosen disciple by having enough potential.
@@ -63,29 +63,30 @@ TALENT: Talent is a fundamental part of cultivation, with the following dependen
         E. Someone Destined to remain mortal will start as a servant.
         F. Everyone else starts as a servant disciple disciple.
     2. Amount of qi needed to reach the next stage.
-    3. maximum attainable cultivation rank. talent is on a scale of 0 to 16.
+    3. maximum attainable cultivation rank. talent is on a scale of 0 to 21.
         ____________________________________________
         | Talent | Maximum Rank                    |
         |________|_________________________________|
-        | 0      | Qi Gathering Early              |
-        | 1      | Qi Gathering Middle             |
-        | 2      | Qi Gathering Late               |
-        | 3      | Qi Gathering Peak               |
-        | 4      | Foundation Establishment Early  |
-        | 5      | Foundation Establishment Middle |
-        | 6      | Foundation Establishment Late   |
-        | 7      | Foundation Establishment Peak   |
-        | 8      | Core Formation Early            |
-        | 9      | Core Formation Middle           |
-        | 10     | Core Formation Late             |
-        | 11     | Core Formation Peak             |
-        | 12     | Nascent Soul Early              |
-        | 13     | Nascent Soul Middle             |
-        | 14     | Nascent Soul Late               |
-        | 15     | Nascent Soul Peak               |
-        | 16     | Deity Transformation Early      |'
-        | 17     | Deity Transformation Middle     |
-        | 18     | Deity Transformation Late       |
-        | 19     | Deity Transformation Peak       |
-        | 20     | Immortality                     |
+        | 0      | Mortal                          |
+        | 1      | Qi Gathering Early              |
+        | 2      | Qi Gathering Middle             |
+        | 3      | Qi Gathering Late               |
+        | 4      | Qi Gathering Peak               |
+        | 5      | Foundation Establishment Early  |
+        | 6      | Foundation Establishment Middle |
+        | 7      | Foundation Establishment Late   |
+        | 8      | Foundation Establishment Peak   |
+        | 9      | Core Formation Early            |
+        | 10     | Core Formation Middle           |
+        | 11     | Core Formation Late             |
+        | 12     | Core Formation Peak             |
+        | 13     | Nascent Soul Early              |
+        | 14     | Nascent Soul Middle             |
+        | 15     | Nascent Soul Late               |
+        | 16     | Nascent Soul Peak               |
+        | 17     | Deity Transformation Early      |
+        | 18     | Deity Transformation Middle     |
+        | 19     | Deity Transformation Late       |
+        | 20     | Deity Transformation Peak       |
+        | 21     | Immortality                     |
         |________|_________________________________|
