@@ -3,14 +3,13 @@ WHAT IS IT: It is a Cultivation game.
 INTRO: It will start by explaining what cultivation is and how it works.
 
 RANKS: Each rank will be split into 4 minor stages, which will be each split into 10 substages.
-The ranks are the following: Qi Gathering, Qi Refining (Optional, but gives a Stronger foundation), Establishment, Core Formation, Nascent Soul,
-Soul Nurturing (Optional, but it gives a Stronger foundation and boosts success rates, along with weakening tribulation), and Deity Transformation
+The ranks are the following: Qi Gathering, Foundation Establishment, Core Formation, Nascent Soul, Deity Transformation, and immortality.
 
 each major rank is split into early, middle, late, and peak stages.
 
 each minor rank is split into the substages G0, G1, G2, G3, G4, G5, G6, G7, G8, G9.
 
-In order to cross a major rank, on must succued in meeting the requirements for the stage(eg, from core formation to nascent soul, once the core is fully formed, the user needs to break the core to free their nascent soul.
+Sonmeone must pass a heavenly tribulation to ascend a minor rank.
 
 COMBAT: Players may battle to increase their combat rank, which follows similar principles to cultivation ranks,
 but has 10 major stages and the same number of minors and substages.
@@ -20,8 +19,43 @@ Martial Ancestor, and Martial Saint.
 
 Each major stage has four substages: lesser, normal, greater, peak.
 
-Sect: Users may join sects to gain contribution which they may spend for pills.
+Sect: Users may join sects to gain contribution points which they may spend for pills.
 
 Your rank deterimeies what tasks you can do and your discount on pills and other resources.
 
 While your talent determines your starting rank, you must take a trial to rank up.
+
+TALENT: Talent is a fundamental part of cultivation, with the following dependent on it:
+    1. Starting rank in sect:
+        A. Someone with potential to reach golden core will start as an outer disciple.
+        B. Someone with potential to reach nascent soul will start as an inner disciple.
+        C. Someone with potential to reach deity transformation will start as a core disciple.
+        D. someone with potential to reach immortality will start as a chosen disciple.
+        E. everyone else starts as a servant.
+    2. Amount of qi needed to reach the next stage.
+    3. maximum attainable cultivation rank. talent is on a scale of 0 to 16.
+        ____________________________________________
+        | Talent | Maximum Rank                    |
+        |________|_________________________________|
+        | 0      | Qi Gathering Early              |
+        | 1      | Qi Gathering Middle             |
+        | 2      | Qi Gathering Late               |
+        | 3      | Qi Gathering Peak               |
+        | 4      | Foundation Establishment Early  |
+        | 5      | Foundation Establishment Middle |
+        | 6      | Foundation Establishment Late   |
+        | 7      | Foundation Establishment Peak   |
+        | 8      | Core Formation Early            |
+        | 9      | Core Formation Middle           |
+        | 10     | Core Formation Late             |
+        | 11     | Core Formation Peak             |
+        | 12     | Nascent Soul Early              |
+        | 13     | Nascent Soul Middle             |
+        | 14     | Nascent Soul Late               |
+        | 15     | Nascent Soul Peak               |
+        | 16     | Deity Transformation Early      |'
+        | 17     | Deity Transformation Middle     |
+        | 18     | Deity Transformation Late       |
+        | 19     | Deity Transformation Peak       |
+        | 20     | Immortality                     |
+        |________|_________________________________|
