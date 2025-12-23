@@ -102,10 +102,15 @@ Each stage has 4 substages: Lesser, Normal, Greater, Peak.
 9.  Martial Ancestor
 10. Martial Saint
 
-6. ADVANCEMENT LOGIC
+5. ABOLISHMENT & REBIRTH MECHANIC
 --------------------------------------------------------------------------------
-Substage G0 to G9: Accumulate EXP using formulas.
-Minor Stage Breakthrough: At G9, trigger Heavenly Tribulation.
-- Success: Advance to next stage G0.
-- Failure: Potential health/Qi loss, stay at G9.
+When a player reaches the "Wall" (G9 of their Talent Ceiling rank):
+- Requirement: Reach the maximum rank allowed by current Talent score.
+- Choice: The player may choose to "Abolish Cultivation Base."
+- Result:
+  1. Talent Score (T) increases by +1.
+  2. Cultivation Rank is reset to Mortal (G0).
+  3. Combat Rank is preserved (NOT reset).
+  4. Player may re-evaluate Sect Rank (allowing for skips with higher Talent).
+
 ================================================================================
