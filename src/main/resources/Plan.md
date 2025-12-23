@@ -85,16 +85,12 @@ Combat Rank is independent of Cultivation Rank.
 ## 5. ABOLISHMENT & REBIRTH MECHANIC
 Players reaching their Talent Ceiling (G9 of their maximum rank) can choose to "Abolish Cultivation Base".
 
-5. ABOLISHMENT & REBIRTH MECHANIC
---------------------------------------------------------------------------------
-When a player reaches the "Wall" (G9 of their Talent Ceiling rank):
-- Requirement: Reach the maximum rank allowed by current Talent score.
-- Choice: The player may choose to "Abolish Cultivation Base."
-- Result:
-  1. Talent Score (T) increases by +1.
-  2. Cultivation Rank is reset to Mortal (G0).
-  3. Combat Rank is changed to what it was before player started cultivating.
-  4. Player may re-evaluate Sect Rank (allowing for skips with higher Talent).
+* **Requirements:** Must reach the maximum rank allowed by current Talent score.
+* **Results:**
+  1.  **Talent Increase:** Talent Score (T) increases by +1.
+  2.  **Rank Reset:** Cultivation Rank resets to Mortal (G0).
+  3.  **Combat Status:** Combat Rank is either preserved or reset to its state prior to cultivation.
+  4.  **Sect Status:** Players can re-evaluate their Sect Rank based on their new higher Talent.
 
 6. INTRO SEQUENCE
 --------------------------------------------------------------------------------
