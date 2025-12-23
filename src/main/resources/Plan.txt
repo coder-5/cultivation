@@ -25,13 +25,43 @@ Your rank deterimeies what tasks you can do and your discount on pills and other
 
 While your talent determines your starting rank, you must take a trial to rank up.
 
+      ______________________________________________________________________________
+      | Cultivation Stage*              | Sect Rank                     | Discount |
+      |_________________________________|_______________________________|__________|
+      | Mortal                          | Servant                       | 0%       |
+      | Qi Gathering Early              | Probationary Servant Disciple | 1%       |
+      | Qi Gathering Middle             | Servant Disciple              | 2%       |
+      | Qi Gathering Late               | Probationary Outer Disciple   | 3%       |
+      | Qi Gathering Peak               | Outer Disciple                | 4%       |
+      | Foundation Establishment Early  | Probationary Inner Disciple   | 5%       |
+      | Foundation Establishment Middle | Inner Disciple                | 6%       |
+      | Foundation Establishment Late   | Probationary Core Disciple    | 7%       |
+      | Foundation Establishment Peak   | Core Disciple                 | 8%       |
+      | Core Formation Early            | Probationary Chosen Disciple  | 9%       |
+      | Core Formation Middle           | Chosen Disciple               | 10%      |
+      | Core Formation Late             | Probationary Enforcer         | 11%      |
+      | Core Formation Peak             | Enforcer                      | 12%      |
+      | Nascent Soul Early              | Probationary Minor Elder      | 13%      |
+      | Nascent Soul Middle             | Minor Elder                   | 14%      |
+      | Nascent Soul Late               | Probationary Elder            | 15%      |
+      | Nascent Soul Peak               | Elder                         | 16%      |
+      | Deity Transformation Early      | Probationary Major Elder      | 17%      |
+      | Deity Transformation Middle     | Major Elder                   | 18%      |
+      | Deity Transformation Late       | Probationary Grand Elder      | 19%      |
+      | Deity Transformation Peak       | Grand Elder                   | 20%      |
+      | Immortality                     | Anscestor                     | 21%      |
+      |_________________________________|_______________________________|__________|
+
+       *This is talking about your actual rank, not the rank you have the potential to reach, however, you may skip up to chosen disciple by having enough potential.
+
 TALENT: Talent is a fundamental part of cultivation, with the following dependent on it:
     1. Starting rank in sect:
         A. Someone with potential to reach golden core will start as an outer disciple.
         B. Someone with potential to reach nascent soul will start as an inner disciple.
         C. Someone with potential to reach deity transformation will start as a core disciple.
         D. someone with potential to reach immortality will start as a chosen disciple.
-        E. everyone else starts as a servant.
+        E. Someone Destined to remain mortal will start as a servant.
+        F. Everyone else starts as a servant disciple disciple.
     2. Amount of qi needed to reach the next stage.
     3. maximum attainable cultivation rank. talent is on a scale of 0 to 16.
         ____________________________________________
