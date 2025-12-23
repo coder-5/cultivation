@@ -33,43 +33,45 @@ The Talent Score dictates the maximum rank a character can naturally achieve:
 * **EXP Requirement:** `neededEXP = (1 + currentSubStageIndex) * (22 - Talent)`.
 * **Cultivation Speed:** `gainPerTick = Random.nextFloat(0, (neededEXP / (22 - Talent)))`.
 
-3. THE SECT SYSTEM (Optional)
---------------------------------------------------------------------------------
-Users may join sects for Contribution Points and Pill Discounts.
+## 3. SECT SYSTEM
+Players may join a sect for Contribution Points and Pill Discounts.
 
-SECT STARTING SKIP (BASED ON POTENTIAL/TALENT):
-- Talent 21: Start as Chosen Disciple
-- Talent 17-20: Start as Core Disciple
-- Talent 13-16: Start as Inner Disciple
-- Talent 9-12: Start as Outer Disciple
-- Talent 0: Start as Servant
-- All others (1-8): Start as Servant Disciple
+### 3.1 Sect Starting Skips (Based on Talent/Potential)
+Characters with high talent can bypass lower sect ranks upon joining:
+* **Talent 21:** Chosen Disciple (10% Discount).
+* **Talent 17–20:** Core Disciple (8% Discount).
+* **Talent 13–16:** Inner Disciple (6% Discount).
+* **Talent 9–12:** Outer Disciple (4% Discount).
+* **Talent 1–8:** Servant Disciple (2% Discount).
+* **Talent 0:** Servant (0% Discount).
 
-FULL SECT RANK & DISCOUNT TABLE (BASED ON ACTUAL RANK):
-| Cultivation Rank                | Sect Rank                     | Discount |
-|---------------------------------|-------------------------------|----------|
-| Mortal                          | Servant                       | 0%       |
-| Qi Gathering Early              | Probationary Servant Disciple | 1%       |
-| Qi Gathering Middle             | Servant Disciple              | 2%       |
-| Qi Gathering Late               | Probationary Outer Disciple   | 3%       |
-| Qi Gathering Peak               | Outer Disciple                | 4%       |
-| Foundation Establishment Early  | Probationary Inner Disciple   | 5%       |
-| Foundation Establishment Middle | Inner Disciple                | 6%       |
-| Foundation Establishment Late   | Probationary Core Disciple    | 7%       |
-| Foundation Establishment Peak   | Core Disciple                 | 8%       |
-| Core Formation Early            | Probationary Chosen Disciple  | 9%       |
-| Core Formation Middle           | Chosen Disciple               | 10%      |
-| Core Formation Late             | Probationary Enforcer         | 11%      |
-| Core Formation Peak             | Enforcer                      | 12%      |
-| Nascent Soul Early              | Probationary Minor Elder      | 13%      |
-| Nascent Soul Middle             | Minor Elder                   | 14%      |
-| Nascent Soul Late               | Probationary Elder            | 15%      |
-| Nascent Soul Peak               | Elder                         | 16%      |
-| Deity Transformation Early      | Probationary Major Elder      | 17%      |
-| Deity Transformation Middle     | Major Elder                   | 18%      |
-| Deity Transformation Late       | Probationary Grand Elder      | 19%      |
-| Deity Transformation Peak       | Grand Elder                   | 20%      |
-| Immortality                     | Ancestor                      | 21%      |
+### 3.2 Full Sect Rank & Discount Table (Based on Actual Rank)
+Progressing through cultivation ranks unlocks higher sect positions and discounts:
+
+| Cultivation Rank      | Sect Rank              | Discount |
+|:----------------------|:-----------------------|:--------:|
+| Mortal                | Servant                |    0%    |
+| Qi Gathering Early    | Prob. Servant Disciple |    1%    |
+| Qi Gathering Middle   | Servant Disciple       |    2%    |
+| Qi Gathering Late     | Prob. Outer Disciple   |    3%    |
+| Qi Gathering Peak     | Outer Disciple         |    4%    |
+| Found. Estab. Early   | Prob. Inner Disciple   |    5%    |
+| Found. Estab. Middle  | Inner Disciple         |    6%    |
+| Found. Estab. Late    | Prob. Core Disciple    |    7%    |
+| Found. Estab. Peak    | Core Disciple          |    8%    |
+| Core Formation Early  | Prob. Chosen Disciple  |    9%    |
+| Core Formation Middle | Chosen Disciple        |   10%    |
+| Core Formation Late   | Prob. Enforcer         |   11%    |
+| Core Formation Peak   | Enforcer               |   12%    |
+| Nascent Soul Early    | Prob. Minor Elder      |   13%    |
+| Nascent Soul Middle   | Minor Elder            |   14%    |
+| Nascent Soul Late     | Prob. Elder            |   15%    |
+| Nascent Soul Peak     | Elder                  |   16%    |
+| Deity Trans. Early    | Prob. Major Elder      |   17%    |
+| Deity Trans. Middle   | Major Elder            |   18%    |
+| Deity Trans. Late     | Prob. Grand Elder      |   19%    |
+| Deity Trans. Peak     | Grand Elder            |   20%    |
+| Immortality           | Ancestor               |   21%    |
 
 4. COMBAT RANK SYSTEM
 --------------------------------------------------------------------------------
