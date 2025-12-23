@@ -1,6 +1,5 @@
-================================================================================
-GAME DESIGN DOCUMENT: CULTIVATION SYSTEM MASTER REFERENCE
-================================================================================
+# GAME DESIGN DOCUMENT: CULTIVATION SYSTEM MASTER REFERENCE
+
 
 1. CORE GAMEPLAY STRUCTURE
 --------------------------------------------------------------------------------
