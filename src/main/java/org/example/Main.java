@@ -10,9 +10,6 @@ public class Main {
     public static ArrayList<String> Titles = new ArrayList<>();
     public static ArrayList<String> Inventory = new ArrayList<>();
 
-    /**
-     * Initializes game; displays cultivation rules; handles talent
-     */
     public static void main(String[] args) {
 
         Random Random = new Random();
@@ -20,11 +17,31 @@ public class Main {
         AddRanks.AddCultivationRanks();
         AddRanks.AddMartialRanks();
         StatsManipulation.AddStats();
+        String input;
+
 
         int talent = Random.nextInt(0, 21);
 
         System.out.println("To cultivate is to defy Heaven. Your vessel is limited by your Spirit Root.\nStructure: 6 Major Ranks, 4 Minor Stages each, 10 Substages (G0-G9) each. \nRequirement: You must pass a Heavenly Tribulation at G9 to reach G0 of the next stage.");
         LetUserKnowTalent(talent);
+
+        System.out.println("Would you like to join the Heaven Shattering Sect ( yes / no ): ");
+        input = Scanner.nextLine();
+
+        if (input.equalsIgnoreCase("yes")) {
+            System.out.println("Congratulations! You have joined the Heaven Shattering Sect. May your cultivation journey be blessed with divine favor.");
+            if (talent == 0) {
+                System.out.println("You have joined as a servant, with the only benefit being the ability to buy pill from the pill hall.");
+            } else if (talent < 9) {
+                System.out.println("You have joined as a servant disciple, this gives you a 2% discount on cultivation resources.");
+            } else if (talent < 13) {
+                System.out.println("You have joined as a outer disciple, this gives you a 4% discount on cultivation resources.");
+            } else if (talent <  17){
+                System.out.println("You have joined as a inner disciple, this gives you a 6% discount on cultivation resources.");
+            } else if (talent < 21) {
+                System.out.println("You have joined as a core disciple, this gives you a 8% discount on cultivation resources.");
+            }
+        }
     }
 
     private static void LetUserKnowTalent(int talent) {
