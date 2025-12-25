@@ -11,7 +11,7 @@ The game is a Cultivation (Xianxia) RPG focused on progression through specific 
 
 ### 1.1 HEAVENLY TRIBULATION
 
-Starting with 1 lighting bolt ad Qi Gathering and increasing by 2 for every rank.
+Starting with 1 lighting bolt at Qi Gathering and increasing by 2 for every rank.
 
 ## 2. TALENT SYSTEM (SPIRIT ROOT)
 A character's **Talent Score (T)** is randomly generated at launch (0 to 21) and determines both their potential ceiling and cultivation efficiency.
@@ -33,7 +33,7 @@ The Talent Score dictates the maximum rank a character can naturally achieve:
 | **9**        | Core Formation Early            | **20**       | Deity Transformation Peak   |
 | **10**       | Core Formation Middle           | **21**       | **Immortality**             |
 
-### 2.2 Growth Formulas (The Heavens Math)
+### 2.2 Growth Formulas
 * **EXP Requirement:** `neededEXP = (1 + currentSubStageIndex) * (22 - Talent)`.
 * **Cultivation Speed:** `gainPerTick = Random.nextFloat(0, (neededEXP / (22 - Talent)))`.
 
